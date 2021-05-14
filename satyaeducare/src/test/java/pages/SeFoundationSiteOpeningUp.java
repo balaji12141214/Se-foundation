@@ -17,7 +17,7 @@ public class SeFoundationSiteOpeningUp extends TestBase {
 	WebDriver driver;
 	WebElements elements = new WebElements();
 
-//	@Test(invocationCount = 100)
+	@Test(invocationCount = 100)
 	public void initialize() {
 
 		util.displayMessage("instantiating driver");
@@ -55,7 +55,7 @@ public class SeFoundationSiteOpeningUp extends TestBase {
 		util.displayMessage("Below Line display How many times successfully completed");
 		System.out.println(invocationCount = invocationCount + 1);
 
-		util.displayMessage("wait for 2 minutes, for next invocation");
+		util.displayMessage("wait for 1 minutes, for next invocation");
 		try {
 			driver.close();
 			util.waitTime();
@@ -64,12 +64,12 @@ public class SeFoundationSiteOpeningUp extends TestBase {
 		}
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		SeFoundationSiteOpeningUp obj = new SeFoundationSiteOpeningUp();
 		obj.initialize();
 	}
-/*	@AfterTest
+
+	@AfterTest
 	public void closeDriver() {
 		try {
 			util.displayMessage("closing driver");
@@ -77,5 +77,5 @@ public class SeFoundationSiteOpeningUp extends TestBase {
 		} catch (Exception e) {
 			util.displayMessage("driver is already closed");
 		}
-	}*/
+	}
 }

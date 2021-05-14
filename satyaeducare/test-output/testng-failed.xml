@@ -6,7 +6,6 @@
       <class name="pages.SeFoundationSiteOpeningUp">
         <methods>
           <include name="closeDriver"/>
-          <include name="assignUtilities"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- pages.SeFoundationSiteOpeningUp -->

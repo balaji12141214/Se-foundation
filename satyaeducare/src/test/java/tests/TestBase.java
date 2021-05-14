@@ -27,11 +27,12 @@ public class TestBase {
 	}
 
 	// wait method for wait time
-			public void simply(int waitTime) {
-				driver.manage().timeouts().implicitlyWait(waitTime, TimeUnit.SECONDS);
-			}
-			
-			public void waitTime() throws InterruptedException {
-				Thread.sleep(120000);
-			}
+	public void simply(int waitTime) {
+		driver.manage().timeouts().implicitlyWait(waitTime, TimeUnit.SECONDS);
+	}
+
+	public void waitTime() throws InterruptedException {
+		Thread.sleep(60000);
+
+	}
 }
