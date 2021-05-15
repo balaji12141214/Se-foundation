@@ -18,7 +18,7 @@ public class SeFoundationSiteOpeningUp extends TestBase {
 	WebDriver driver;
 	WebElements elements = new WebElements();
 
-	@Test(invocationCount = 100)
+	@Test(invocationCount = /*100*/ 2)
 	public void initialize() {
 
 		try {
